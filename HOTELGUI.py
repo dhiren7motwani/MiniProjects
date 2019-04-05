@@ -119,7 +119,7 @@ def file():
     file=open('HOTELDATABASE.txt','w')
     file.write(tabulate(mytable))
     toaddr=J3.get()
-    fromaddr="2016.dhiren.motwani@ves.ac.in"
+    fromaddr="youremailid"
     msg=MIMEMultipart()
     msg['From']=fromaddr
     msg['To']=toaddr
@@ -135,7 +135,7 @@ def file():
     msg.attach(part)
     server=smtplib.SMTP('smtp.gmail.com',587)
     server.starttls()
-    server.login(fromaddr,"797@dhiren")
+    server.login(fromaddr,"yourpassword")
     text=msg.as_string()
     server.sendmail(fromaddr,toaddr,text)
     server.quit()
