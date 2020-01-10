@@ -61,16 +61,7 @@ def ch():
     file.write(tabulate(mytable))
     
     second()
-def second():
-    X1.pack_forget()
-    T1.pack_forget()
-    O1.pack_forget()
-    f1.pack_forget()
-    I1.pack_forget()
-    frame3.pack_forget()
-    K1.pack_forget()
-    J1.pack_forget()
-    frame.pack()
+
 def checkout():
   frame.pack_forget()
   I1.pack()
