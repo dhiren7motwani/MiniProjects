@@ -12,7 +12,7 @@ from email.mime.base import MIMEBase
 from email import encoders
 from tkinter import *
 from functools import partial
-conn=mysql.connector.connect(user='root',password='dhiren@7',host='localhost')
+conn=mysql.connector.connect(user='root',password='***',host='localhost')
 c=conn.cursor()
 d=0
 def create_table():    
